@@ -1,0 +1,143 @@
+
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+.logo{
+	position:absolute;
+	margin-left:70px;
+	margin-top:-70px;
+}
+.headstyle
+{
+	text-align: center;
+	background: #3333ff;
+	font-family:inherit;
+	font-size: 80px;
+	color:red;
+	animation:mymove 5s infinite;
+}
+.menu-bar
+{
+	background: #333;
+	text-align: center;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+}
+.menu-bar ul li
+{
+	width: 160px;
+	margin: 15px;
+	padding: 15px;
+	font-size:20px;
+}
+.menu-bar ul li:hover
+{
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.submenu1
+{
+	display: none;
+	
+}
+.menu-bar ul li:hover .submenu1
+{
+	display: block;
+	position: absolute;
+	background: #333;
+	margin-top: 15px;
+	margin-left: -15px;
+	
+}
+
+@keyframes mymove{
+	from{color:red;}
+	to{color:#ffff1a;}
+}
+.menu-bar ul li:hover .submenu1 ul
+{
+	display: block;
+	margin: 10px;
+}
+
+.menu-bar ul li:hover .submenu1 ul li
+{
+	width: 170px;
+	padding: 5px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu-bar ul li:hover .submenu1 ul li:last-child
+{
+	border-bottom: none;
+}
+
+.submenu2
+{
+	display:none;
+}
+.hoverme:hover .submenu2
+{
+	position:absolute;
+	display:block;
+	margin-top:-40px;
+	margin-left:140px;
+	background: #333;
+	transition: width 3s;
+}
+.col{
+		background-image: url(homelogo.jpg);
+		background-repeat: no-repeat;
+		background-position: absolute;
+		background-size: cover;
+		height:460px;
+		
+	}
+	
+.col h2{
+	position:absolute;
+	margin-top: 250px;
+	margin-left:300px;
+	color:red;
+	font-family: sans-serif;
+}
+.col h1{
+	position:absolute;
+	margin-top: 320px;
+	margin-left:500px;
+	color:#7100e1;
+	font-family: sans-serif;
+}
+.bg{
+	
+		background-image: url(MainBG.jpg);
+		background-repeat: no-repeat;
+		background-position: absolute;
+		background-size: cover;
+		min-height:72vh;
+}
+.bg h2{
+	position:absolute;
+	color:lime;
+	margin-left:100px;
+	margin-top:150px;
+	font-family: cursive;
+}
+.bg1{
+	background-color: #a8a8a8;
+}
